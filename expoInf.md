@@ -46,3 +46,4 @@ END
 ### Create Views
 
 ### CDL
+- Es una pieza de información
