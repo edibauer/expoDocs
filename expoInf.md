@@ -107,12 +107,14 @@ SAP Incentive Management es una solución de software que forma parte del portaf
 #### TABLAS
 + Definición 
 
-Una tabla en SQL es una estructura de datos organizada en filas y columnas que se utiliza para almacenar y organizar datos en una base de datos relacional. Aquí tienes una explicación más detallada:
+Una tabla en SQL es una estructura de datos organizada en filas y columnas que se utiliza para almacenar y organizar datos en una base de datos relacional. 
 
-    - Columnas: Representan los diferentes atributos o características de los datos que se están almacenando. Cada columna tiene un nombre y un tipo de dato específico (como INT para números enteros, VARCHAR para cadenas de texto, DATE para fechas, etc.).
-    - Filas: Cada fila (también conocida como registro o tuple) representa una instancia de los datos, donde cada valor en la fila corresponde a una columna específica.
-    - Clave Primaria (Primary Key): Generalmente, una tabla tiene una o más columnas designadas como clave primaria, que garantiza que cada registro sea único y facilita la identificación de registros.
-    - Restricciones: Además de las claves primarias, las tablas pueden tener otras restricciones como claves foráneas (Foreign Keys), índices, chequeos (CHECK constraints) para mantener la integridad de los datos.
+    + Características: 
+
+        - Columnas: Representan los diferentes atributos o características de los datos que se están almacenando. Cada columna tiene un nombre y un tipo de dato específico (como INT para números enteros, VARCHAR para cadenas de texto, DATE para fechas, etc.).
+        - Filas: Cada fila (también conocida como registro o tuple) representa una instancia de los datos, donde cada valor en la fila corresponde a una columna específica.
+        - Clave Primaria (Primary Key): Generalmente, una tabla tiene una o más columnas designadas como clave primaria, que garantiza que cada registro sea único y facilita la identificación de registros.
+        - Restricciones: Además de las claves primarias, las tablas pueden tener otras restricciones como claves foráneas (Foreign Keys), índices, chequeos (CHECK constraints) para mantener la integridad de los datos.
 
 + Entorno webIDE
 ![alt text](image-6.png)
@@ -470,5 +472,19 @@ La funcionalidad de extracción de datos, accesible desde la opción 'Run > Pipe
 
 + Verifiación de Salida SFTP
 El archivo de extracción se debe depositar en la carpeta OUTBOUND del SFTP
+
+### 11 Stagehook
+Es un proceso personalizado con una configuración no estándar diseñada para ejecutar funcionalidades que exceden las capacidades predeterminadas de la herramienta.
+
+- Pre-stage, Post-stage, Stage failure: Procedimiento previo a una etapa, posterior a una etapa y en caso de falla de una etapa, respectivamente.
+
+- Archivo .xml: El archivo .xml requerido para el soporte técnico debe solicitarse previamente a través de un ticket.
+
+### 12 Migraciones
+Se establece que las migraciones de los ambientes DEV y TST hacia el ambiente PRD se llevarán a cabo mediante la generación de un ticket formal en la plataforma SAP For Me.
+
+Previo a la ejecución de la migración, se solicitará al equipo de soporte técnico el archivo de CustomCodeMigration. Este documento deberá contener una descripción exhaustiva del código a migrar, así como los scripts correspondientes, los cuales serán almacenados en archivos de texto (.txt) con una nomenclatura que facilite su identificación. El archivo de CustomCodeMigration, una vez finalizado, será entregado al equipo de soporte para su procesamiento en el entorno productivo.
+
+
 
 
