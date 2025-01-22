@@ -136,6 +136,7 @@ CREATE TABLE schema_name.table_name(
 )
 ```
 + Propiedades de los campos
+
 Las columnas de una tabla pueden tener varios tipos de datos, los cuales se seleccionan de acuerdo a la naturaleza de la información que se desea almacenar. Aquí hay una lista de algunos de los tipos de datos más comunes:
 
     - Tipos de Datos Numéricos:

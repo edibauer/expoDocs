@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE stagehooks SYSTEM "../classpath/properties/StageHookDescriptor.dtd">
+
+<!--
+
+
+NOTE: Do not rename this file to StageHookDescritptor.xml. The samples
+shown here do not run and will cause the pipeline to fail. You should
+copy a descriptor to a StageHookDescritptor.xml file and replace the
+content of the tags as appropriate.
+
+-->
+
+<stagehooks version="1.0">
+
+    <stagehook stagename="Classify">
+        <poststage type="storedproc" stopPipelineOnFailure="false">
+            <command>ext.PROC_TXN_ASSIGN_STAGEHOOK</command>
+            <pipelineArgs>
+                <name>pipelineRunSeq</name>
+            </pipelineArgs>
+        </poststage>
+    </stagehook>
+
+</stagehooks>
